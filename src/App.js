@@ -8,7 +8,6 @@ import RequestList from "./Components/admin/RequestList";
 // import Userbooks from "./Components/user/Userbooks";
 import Register from "./Components/admin/Register";
 import EditRequest from "./Components/admin/edit-request";
-import Bookrequests from "./Components/admin/Bookrequests";
 import EditBookReq from "./Components/admin/EditBookReq";
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
