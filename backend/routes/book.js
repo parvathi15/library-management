@@ -10,7 +10,7 @@ router.route("/").get((req, res) => {
 });
 
 
-router.get('/listedbooks',async function(req, res) {
+router.get('/sachu',async function(req, res) {
   var data=[];
   try{
     let bookData=await Book.distinct("title").exec();

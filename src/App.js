@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Navbar from "./Components/Navbar";
 import Login from "./Components/Login";
 import HomePage from "./Components/user/Homepage";
-import Userbooks from "./Components/user/Userbooks";
-import UserProfile from "./Components/user/UserProfile";
-import BookHistory from "./Components/user/BookHistory";
+// import Userbooks from "./Components/user/Userbooks";
+// import UserProfile from "./Components/user/UserProfile";
+// import BookHistory from "./Components/user/BookHistory";
 import Adminpage from "./Components/admin/Adminpage";
 import Bookrequests from "./Components/admin/Bookrequests";
 import RequestList from "./Components/admin/RequestList";
@@ -37,9 +37,9 @@ export default class App extends Component {
     <Route path="/edituser/:id" component={EditRequest} />
     <Route path="/editbkre/:id" component={EditBookReq} />
     <Route path="/homepage" component={HomePage} />
-    <Route path="/profile" component={UserProfile} />
+    {/* <Route path="/profile" component={UserProfile} />
     <Route path="/history" component={BookHistory} /> 
-    <Route exact path="/userbook" component={Userbooks} />
+    <Route exact path="/userbook" component={Userbooks} /> */}
     </div>
     </Switch>
   </Router>
