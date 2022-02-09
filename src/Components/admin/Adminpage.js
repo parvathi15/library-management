@@ -48,27 +48,28 @@ export default class Adminpage extends Component {
             </div>
             <div class="col-md-4">
             <div class="quiz-topic">
-           
-              <div className='img-corner'>
+            <Link to= {{
+              pathname:'/userreqs',
+            }}>
+            <div className='img-corner'>
             <img src={member} alt="" className="mt-5" width = "80px" height = "80px" />
             </div>
             <p>
             Member Requests
             </p>
-           
+           </Link>
             </div>
             </div>
             <div class="col-md-4">
             <div class="quiz-topic">
-         
+            <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
+              pathname:'/records',
+            }}>
             <div className='img-corner'>
             <img src={requestbook} alt="" className="mt-5" width = "80px" height = "80px" />
             </div>
-            <p>
-           
-            Book Requests
-            
-            </p>
+            <p>Book Requests</p>
+            </Link>
             </div>
             </div>
             </div>
