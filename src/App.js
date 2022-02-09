@@ -7,6 +7,9 @@ import RequestList from "./Components/admin/RequestList";
 // import HomePage from "./Components/user/Homepage";
 // import Userbooks from "./Components/user/Userbooks";
 import Register from "./Components/admin/Register";
+import EditRequest from "./Components/admin/edit-request";
+import Bookrequests from "./Components/admin/Bookrequests";
+import EditBookReq from "./Components/admin/EditBookReq";
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -30,6 +33,8 @@ export default class App extends Component {
     <Route path="/admin" component={Adminpage} />
     <Route path="/userreqs" component={RequestList} />
     <Route path="/records" component={Bookrequests} />
+    <Route path="/edituser/:id" component={EditRequest} />
+    <Route path="/editbkre/:id" component={EditBookReq} />
     {/* <Route path="/homepage" component={HomePage} />
     <Route exact path="/userbook" component={Userbooks} /> */}
     </div>
