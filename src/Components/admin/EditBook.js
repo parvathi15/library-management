@@ -49,12 +49,6 @@ export default class EditBook extends Component {
          // errors["password"] = " Please fill properly";
        }
  
-       if(this.state.bookid.indexOf(' ') >= 0){
-         formIsValid = false;
-         errors["bookid"] = "Please avoid spaces";
-     }
-        
- 
         if(!this.state.title){
            formIsValid = false;
            errors["title"] = "Book Title field cannot be empty";
@@ -241,19 +235,7 @@ export default class EditBook extends Component {
              <span style={{color: "#db2525"}}>{this.state.errors["subject"]}</span>
           </div>
 
-
-          {/* <div className="form-group">
-            <label className="ip_label mt-3">Date: </label>
-            <div>
-              <DatePicker
-                selected={this.state.date}
-                onChange={this.onChangeDate}
-                className="input"
-              />
-            </div>
-          </div> */}
-
-        <Modal.Footer>
+      <Modal.Footer>
         <div className="form-group mt-3">
             <input
               type="submit"

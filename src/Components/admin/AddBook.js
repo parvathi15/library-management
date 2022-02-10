@@ -93,13 +93,7 @@ export default class AddBook extends Component {
          // errors["password"] = " Please fill properly";
        }
  
-       if(this.state.bookid.indexOf(' ') >= 0){
-         formIsValid = false;
-         errors["bookid"] = "Please avoid spaces";
-     }
-        
- 
-        if(!this.state.title){
+       if(!this.state.title){
            formIsValid = false;
            errors["title"] = "Book Title field cannot be empty";
         } else if(!this.state.title.match(/^[a-zA-Z]+$/)){ 
