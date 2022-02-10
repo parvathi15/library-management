@@ -10,7 +10,7 @@ import AddBook from "./Components/admin/AddBook";
 import EditBook from "./Components/admin/EditBook";
 import Adminpage from "./Components/admin/Adminpage";
 // import Bookrequests from "./Components/admin/Bookrequests";
-// import RequestList from "./Components/admin/RequestList";
+import RequestList from "./Components/admin/RequestList";
 import Register from "./Components/admin/Register";
 import BookList from "./Components/admin/BookList";
 // import EditRequest from "./Components/admin/edit-request";
@@ -48,6 +48,8 @@ export default class App extends Component {
     <Route path="/addbook" component={AddBook} />
     <Route path="/list" component={BookList} />
     <Route path="/editbook/:id" component={EditBook} />
+    {/* <Route path="/records" component={Bookrequests} /> */}
+    <Route path="/userreqs" component={RequestList} />
     {/* <Route path="/userreqs" component={RequestList} />
     <Route path="/records" component={Bookrequests} />
     <Route path="/edituser/:id" component={EditRequest} />

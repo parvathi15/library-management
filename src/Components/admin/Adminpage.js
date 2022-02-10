@@ -48,16 +48,16 @@ export default class Adminpage extends Component {
             </div>
             <div class="col-md-4">
             <div class="quiz-topic">
-            {/* <Link to= {{
+            <Link to= {{
               pathname:'/userreqs',
-            }}> */}
+            }}>
             <div className='img-corner'>
             <img src={member} alt="" className="mt-5" width = "80px" height = "80px" />
             </div>
             <p>
             Member Requests
             </p>
-           {/* </Link> */}
+           </Link>
             </div>
             </div>
             <div class="col-md-4">
@@ -98,7 +98,7 @@ export default class Adminpage extends Component {
             </Link>
             </div>
             </div> */}
-            {/* <div class="col-md-4">
+            <div class="col-md-4">
             <div class="quiz-topic">
             <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
               pathname:'/list',
@@ -109,7 +109,7 @@ export default class Adminpage extends Component {
             <p> List of Books</p>
             </Link>
             </div>
-            </div> */}
+            </div>
             </div>
          </div>
         )
