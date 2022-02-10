@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { Route , withRouter} from 'react-router-dom';
 import Moment from 'moment';
+import dateFormat from 'dateformat';
 var moment = require('moment');
 
  class BookHistory extends Component {
@@ -176,8 +177,8 @@ return (
 <td>{book.title}</td>
 <td>{book.author}</td>
 <td>{book.subject}</td>
-<td>{Moment(book.issue_date).format('MM-DD-YYYY')}</td>
-<td>{Moment(book.due_date).format('MM-DD-YYYY')}</td>
+<td>{dateFormat((book.issue_date), "mmmm dS, yyyy")}</td>
+<td>{dateFormat((book.due_date), "mmmm dS, yyyy")}</td>
 <td>{book.status}</td>
 </tr>
   )
