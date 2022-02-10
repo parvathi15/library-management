@@ -11,7 +11,7 @@ import ViewBook from "./Components/user/ViewBook";
 // import Adminpage from "./Components/admin/Adminpage";
 // import Bookrequests from "./Components/admin/Bookrequests";
 // import RequestList from "./Components/admin/RequestList";
-// import Register from "./Components/admin/Register";
+import Register from "./Components/admin/Register";
 // import EditRequest from "./Components/admin/edit-request";
 // import EditBookReq from "./Components/admin/EditBookReq";
 // import BookList from "./Components/admin/BookList";
