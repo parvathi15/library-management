@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import axios from "axios";
-import booklist from "./imgs/booklist.png";
+// import booklist from "./imgs/booklist.png";
 import member from "./imgs/member.png";
-import drinka from "./imgs/drinka.png";
+// import drinka from "./imgs/drinka.png";
 import requestbook from "./imgs/requestbook.png";
 import users from "./imgs/users.png";
 import addbook from "./imgs/addbook.png";
@@ -48,16 +48,16 @@ export default class Adminpage extends Component {
             </div>
             <div class="col-md-4">
             <div class="quiz-topic">
-            <Link to= {{
+            {/* <Link to= {{
               pathname:'/userreqs',
-            }}>
+            }}> */}
             <div className='img-corner'>
             <img src={member} alt="" className="mt-5" width = "80px" height = "80px" />
             </div>
             <p>
             Member Requests
             </p>
-           </Link>
+           {/* </Link> */}
             </div>
             </div>
             <div class="col-md-4">
@@ -73,7 +73,7 @@ export default class Adminpage extends Component {
             </div>
             </div>
             </div>
-            {/* <div class="row">
+            <div class="row">
             <div class="col-md-4">
             <div class="quiz-topic">
             <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
@@ -86,7 +86,7 @@ export default class Adminpage extends Component {
             </Link>
             </div>
             </div>
-            <div class="col-md-4">
+            {/* <div class="col-md-4">
             <div class="quiz-topic">
             <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
               pathname:'/return',
@@ -97,8 +97,8 @@ export default class Adminpage extends Component {
             <p>Return Books</p>
             </Link>
             </div>
-            </div>
-            <div class="col-md-4">
+            </div> */}
+            {/* <div class="col-md-4">
             <div class="quiz-topic">
             <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
               pathname:'/list',
@@ -109,8 +109,8 @@ export default class Adminpage extends Component {
             <p> List of Books</p>
             </Link>
             </div>
-            </div>
             </div> */}
+            </div>
          </div>
         )
     }
