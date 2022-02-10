@@ -50,7 +50,7 @@ export default class App extends Component {
     <Route path="/editbook/:id" component={EditBook} />
     {/* <Route path="/records" component={Bookrequests} /> */}
     <Route path="/userreqs" component={RequestList} />
-    {/* <Route path="/userreqs" component={RequestList} />
+    {/* 
     <Route path="/records" component={Bookrequests} />
     <Route path="/edituser/:id" component={EditRequest} />
     <Route path="/editbkre/:id" component={EditBookReq} />
