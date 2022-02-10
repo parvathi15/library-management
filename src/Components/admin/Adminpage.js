@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import booklist from "./imgs/booklist.png";
 import member from "./imgs/member.png";
-// import drinka from "./imgs/drinka.png";
+
 import requestbook from "./imgs/requestbook.png";
 import users from "./imgs/users.png";
 import addbook from "./imgs/addbook.png";
@@ -91,9 +91,7 @@ export default class Adminpage extends Component {
             <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
               pathname:'/return',
             }}>
-            <div className='img-corner'>
-            {/* <img src={drinka} alt="" className="mt-5" width = "80px" height = "80px" /> */}
-            </div>
+           
             <p>Return Books</p>
             </Link>
             </div>
