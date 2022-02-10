@@ -73,6 +73,44 @@ export default class Adminpage extends Component {
             </div>
             </div>
             </div>
+            <div class="row">
+            <div class="col-md-4">
+            <div class="quiz-topic">
+            <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
+              pathname:'/addbook',
+            }}>
+            <div className='img-corner'>
+            <img src={addbook} alt="" className="mt-5" width = "80px" height = "80px" />
+            </div>
+            <p>Add Book</p>
+            </Link>
+            </div>
+            </div>
+            {/* <div class="col-md-4">
+            <div class="quiz-topic">
+            <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
+              pathname:'/return',
+            }}>
+            <div className='img-corner'>
+            <img src={drinka} alt="" className="mt-5" width = "80px" height = "80px" />
+            </div>
+            <p>Return Books</p>
+            </Link>
+            </div>
+            </div> */}
+            <div class="col-md-4">
+            <div class="quiz-topic">
+            <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
+              pathname:'/list',
+            }}>
+            <div className='img-corner'>
+            <img src={booklist} alt="" className="mt-5" width = "80px" height = "80px" />
+            </div>
+            <p> List of Books</p>
+            </Link>
+            </div>
+            </div>
+            </div>
          </div>
         )
     }
