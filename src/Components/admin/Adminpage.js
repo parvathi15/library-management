@@ -86,7 +86,7 @@ export default class Adminpage extends Component {
             </Link>
             </div>
             </div>
-            {/* <div class="col-md-4">
+            <div class="col-md-4">
             <div class="quiz-topic">
             <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
               pathname:'/return',
@@ -97,7 +97,7 @@ export default class Adminpage extends Component {
             <p>Return Books</p>
             </Link>
             </div>
-            </div> */}
+            </div>
             <div class="col-md-4">
             <div class="quiz-topic">
             <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
