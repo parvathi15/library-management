@@ -6,9 +6,9 @@ import Userbooks from "./Components/user/Userbooks";
 import UserProfile from "./Components/user/UserProfile";
 import BookHistory from "./Components/user/BookHistory";
 import ViewBook from "./Components/user/ViewBook";
-// import AddBook from "./Components/admin/AddBook";
+import AddBook from "./Components/admin/AddBook";
 // import EditBook from "./Components/admin/EditBook";
-// import Adminpage from "./Components/admin/Adminpage";
+import Adminpage from "./Components/admin/Adminpage";
 // import Bookrequests from "./Components/admin/Bookrequests";
 // import RequestList from "./Components/admin/RequestList";
 import Register from "./Components/admin/Register";
@@ -43,18 +43,19 @@ export default class App extends Component {
     <Route path="/history" component={BookHistory} /> 
     <Route path="/userbook" component={Userbooks} />
     <Route path="/viewbook/:id" component={ViewBook} />
-    {/* <Route path="/admin" component={Adminpage} />
-    <Route path="/userreqs" component={RequestList} />
+    {/* admin side */}
+    <Route path="/admin" component={Adminpage} />
+    <Route path="/addbook" component={AddBook} />
+    {/* <Route path="/userreqs" component={RequestList} />
     <Route path="/records" component={Bookrequests} />
     <Route path="/edituser/:id" component={EditRequest} />
     <Route path="/editbkre/:id" component={EditBookReq} />
-    <Route path="/addbook" component={AddBook} />
     <Route path="/editbook/:id" component={EditBook} />
     <Route path="/list" component={BookList} />
      <Route path="/editreturn/:id" component={EditBookReturn} />
     <Route path="/fine/:id" component={ImpFine} />
-    <Route path="/return" component={BookRecords} />
-    */}
+    <Route path="/return" component={BookRecords} /> */}
+   
 
     </div>
     </Switch>
