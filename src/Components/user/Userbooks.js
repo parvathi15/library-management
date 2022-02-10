@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { Route , withRouter} from 'react-router-dom';
 import Moment from 'moment';
-import dateFormat from 'dateformat';
-var moment = require('moment');
+// import dateFormat from 'dateformat';
+
 
  class Userbooks extends Component {
     constructor(props) {
@@ -171,8 +171,10 @@ return (
 <td>{book.author}</td>
 <td>{book.subject}</td>
 <td>{book.copies}</td>
-<td>{dateFormat((book.issue_date), "mmmm dS, yyyy")}</td>
-<td>{dateFormat((book.due_date), "mmmm dS, yyyy")}</td>
+<td>{Moment(book.issue_date).format('MM-DD-YYYY')}</td>
+<td>{Moment(book.due_date).format('MM-DD-YYYY')}</td>
+{/* <td>{dateFormat((book.issue_date), "mmmm dS, yyyy")}</td>
+<td>{dateFormat((book.due_date), "mmmm dS, yyyy")}</td> */}
 {todayDate === dueDate && book.returnstatus === false ?  (
 <td><button className='btn btn-success'  disabled={this.hasChangedSinceInitialState()}>
 <Link to={"/viewbook/" + book._id}>Extend</Link> 
