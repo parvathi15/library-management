@@ -92,7 +92,7 @@ export default class Adminpage extends Component {
               pathname:'/return',
             }}>
             <div className='img-corner'>
-            <img src={drinka} alt="" className="mt-5" width = "80px" height = "80px" />
+            {/* <img src={drinka} alt="" className="mt-5" width = "80px" height = "80px" /> */}
             </div>
             <p>Return Books</p>
             </Link>
