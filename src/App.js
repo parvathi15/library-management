@@ -7,6 +7,8 @@ import Adminpage from "./Components/admin/Adminpage";
 import AddBook from "./Components/admin/AddBook";
 import Register from "./Components/admin/Register";
 import BookList from "./Components/admin/BookList";
+import Bookrequests from "./Components/admin/Bookrequests";
+
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -33,9 +35,7 @@ export default class App extends Component {
     <Route path="/addbook" component={AddBook} />
     <Route path="/list" component={BookList} />
     <Route path="/editbook/:id" component={EditBook} />
-
-   
-
+    <Route path="/records" component={Bookrequests} />
     </div>
     </Switch>
   </Router>
