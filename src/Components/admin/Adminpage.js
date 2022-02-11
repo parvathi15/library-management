@@ -35,81 +35,84 @@ export default class Adminpage extends Component {
         return (
     
           <div className="container mt-5">
-               <div class="row">
-            <div class="col-md-4">
-            <div class="quiz-topic">
-            <div className='img-corner'>
-            <img src={users} alt="" className="mt-5" width = "80px" height = "80px" />
-            </div>
-            <p>
-            <a href= "#" className = "ml-5" style = {{ marginRight: "25px"}}>{total} Users</a>
-            </p>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="quiz-topic">
-            <Link to= {{
-              pathname:'/userreqs',
-            }}>
-            <div className='img-corner'>
-            <img src={member} alt="" className="mt-5" width = "80px" height = "80px" />
-            </div>
-            <p>
-            Member Requests
-            </p>
-           </Link>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="quiz-topic">
-            <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
-              pathname:'/records',
-            }}>
-            <div className='img-corner'>
-            <img src={requestbook} alt="" className="mt-5" width = "80px" height = "80px" />
-            </div>
-            <p>Book Requests</p>
-            </Link>
-            </div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-4">
-            <div class="quiz-topic">
-            <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
-              pathname:'/addbook',
-            }}>
-            <div className='img-corner'>
-            <img src={addbook} alt="" className="mt-5" width = "80px" height = "80px" />
-            </div>
-            <p>Add Book</p>
-            </Link>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="quiz-topic">
-            <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
-              pathname:'/return',
-            }}>
-           
-            <p>Return Books</p>
-            </Link>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="quiz-topic">
-            <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
-              pathname:'/list',
-            }}>
-            <div className='img-corner'>
-            <img src={booklist} alt="" className="mt-5" width = "80px" height = "80px" />
-            </div>
-            <p> List of Books</p>
-            </Link>
-            </div>
-            </div>
-            </div>
-         </div>
+          <div class="row">
+       <div class="col-md-4">
+       <div class="quiz-topic">
+       <div className='img-corner'>
+       <img src={users} alt="" className="mt-5" width = "80px" height = "80px" />
+       </div>
+       <p>
+       <a href= "#" className = "ml-5" style = {{ marginRight: "25px"}}>{total} Users</a>
+       </p>
+       </div>
+       </div>
+       <div class="col-md-4">
+       <div class="quiz-topic">
+       <Link to= {{
+         pathname:'/userreqs',
+       }}>
+       <div className='img-corner'>
+       <img src={member} alt="" className="mt-5" width = "80px" height = "80px" />
+       </div>
+       <p>
+       Member Requests
+       </p>
+      </Link>
+       </div>
+       </div>
+       <div class="col-md-4">
+       <div class="quiz-topic">
+       <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
+         pathname:'/records',
+       }}>
+       <div className='img-corner'>
+       <img src={requestbook} alt="" className="mt-5" width = "80px" height = "80px" />
+       </div>
+       <p>Book Requests</p>
+       </Link>
+       </div>
+       </div>
+       </div>
+       <div class="row">
+       <div class="col-md-4">
+       <div class="quiz-topic">
+       <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
+         pathname:'/addbook',
+       }}>
+       <div className='img-corner'>
+       <img src={addbook} alt="" className="mt-5" width = "80px" height = "80px" />
+       </div>
+       <p>Add Book</p>
+       </Link>
+       </div>
+       </div>
+       <div class="col-md-4">
+       <div class="quiz-topic">
+       <div className='img-corner'>
+       <img src={drinka} alt="" className="mt-5" width = "80px" height = "80px" />
+       </div>
+       <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
+         pathname:'/return',
+       }}>
+      
+       <p>Return Books</p>
+       </Link>
+       </div>
+       </div>
+       <div class="col-md-4">
+       <div class="quiz-topic">
+       <Link className = "ml-5" style = {{ marginLeft: "12px"}} to= {{
+         pathname:'/list',
+       }}>
+       <div className='img-corner'>
+       <img src={booklist} alt="" className="mt-5" width = "80px" height = "80px" />
+       </div>
+       <p> List of Books</p>
+       </Link>
+       </div>
+       </div>
+       </div>
+    </div>
         )
     }
 }
