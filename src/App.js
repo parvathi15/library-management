@@ -4,7 +4,6 @@ import Login from "./Components/Login";
 import HomePage from "./Components/user/Homepage";
 import Userbooks from "./Components/user/Userbooks";
 import UserProfile from "./Components/user/UserProfile";
-import BookHistory from "./Components/user/BookHistory";
 import EditBook from "./Components/admin/EditBook";
 import Adminpage from "./Components/admin/Adminpage";
 import AddBook from "./Components/admin/AddBook";
@@ -35,7 +34,6 @@ export default class App extends Component {
     <Navbar />
     <Route path="/homepage" component={HomePage} />
     <Route path="/profile" component={UserProfile} />
-    <Route path="/history" component={BookHistory} /> 
     <Route path="/userbook" component={Userbooks} />
     {/* admin side */}
     <Route path="/admin" component={Adminpage} />
