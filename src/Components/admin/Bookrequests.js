@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import axios from "axios";
-import EditBookReq from './EditBookReq';
-import { Link } from "react-router-dom";
 import { Route , withRouter} from 'react-router-dom';
 import Moment from 'moment';
 
@@ -161,13 +159,6 @@ import Moment from 'moment';
       >
        <i class="fa fa-trash"></i>
       </a>
-      {/* <a
-        onClick={() => {
-          this.deleteuserRequest(req._id);
-        }}
-      >
-       <i class="fa fa-trash"></i>
-      </a> */}
     </td>
     
    
@@ -177,11 +168,6 @@ import Moment from 'moment';
 </tbody>
 </table>
  </div>
- {this.state.showModal && 
-          <EditBookReq 
-            onCloseModal={this.showModal} 
-          />
-        }
  </div>
         )
     }
